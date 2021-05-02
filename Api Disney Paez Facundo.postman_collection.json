@@ -67,7 +67,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": ""
+							"raw": "{\n    \"name\": \"Micky\",\n    \"age\": 20,\n    \"weight\": 40,\n    \"img\": \"httos\",\n    \"history\": \"sdas\",\n    \"film\": [\"OtraPel\"]\n}"
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/characters",
@@ -193,9 +193,15 @@
 					"name": "/films",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "http://localhost:3000/api/film",
+							"raw": "http://localhost:3000/api/films",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -203,7 +209,7 @@
 							"port": "3000",
 							"path": [
 								"api",
-								"film"
+								"films"
 							]
 						}
 					},
@@ -215,7 +221,17 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:3000/api/films/608ec0545ded5142397cbf9a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"films",
+								"608ec0545ded5142397cbf9a"
+							]
 						}
 					},
 					"response": []
@@ -238,7 +254,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"Frozen II\",\n    \"img\": \"httpskasd\"\n    \n}"
+							"raw": "{\n    \"title\": \"OtraPel\",\n    \"img\": \"httpskasd\"\n    \n}"
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/films",
