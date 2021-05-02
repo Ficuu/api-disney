@@ -1,8 +1,9 @@
 import Character from '../models/characters'
+import Film from '../models/film'
 
 export const createCharacter = async (req, res) => {
 
-    const {name, age, weight, img, history} = req.body
+    const {name, age, weight, img, history, film} = req.body
     
     const newCharacter = new Character ({   
         name,
@@ -12,6 +13,13 @@ export const createCharacter = async (req, res) => {
         history
     })
 
+    if(film) {
+        const foundFilms = await Film.find({title: {$in: film}})
+        newCharacter.film = foundFilms.map(film => film._id)
+    } else {
+        res.status(401).json({message: "Film not found"})
+    }
+    
     const characterSaved = await newCharacter.save()
     res.status(201).json(characterSaved)
 }

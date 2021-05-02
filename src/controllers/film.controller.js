@@ -27,7 +27,7 @@ export const updateFilmById = async (req, res) => {
     res.status(200).json(updateFilm)
 }
 
-export const deleteFilmId = async (req, res) => {
+export const deleteFilmById = async (req, res) => {
     await Film.findByIdAndDelete(req.params.filmId)
     res.status(204).json({message: "deleted"})
 }

@@ -12,6 +12,6 @@ router.get('/:filmId', filmCtrl.getFilmById)
 
 router.put('/:filmId', [authJwt.verifyToken, authJwt.isAdmin], filmCtrl.updateFilmById)
 
-router.delete('/:filmmId', [authJwt.verifyToken, authJwt.isAdmin], filmCtrl.deleteFilmId)
+router.delete('/:filmId', [authJwt.verifyToken, authJwt.isAdmin], filmCtrl.deleteFilmById)
 
 export default router
