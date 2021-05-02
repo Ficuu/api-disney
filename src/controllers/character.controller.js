@@ -1,22 +1,20 @@
-import { PromiseProvider } from 'mongoose'
 import Character from '../models/characters'
 
 export const createCharacter = async (req, res) => {
 
-    const {name, category, price, imgURL} = req.body
+    const {name, age, weight, img, history} = req.body
+    
     const newCharacter = new Character ({   
         name,
-        category,
-        price,
-        imgURL 
-        
+        age,
+        weight,
+        img,
+        history
     })
 
     const characterSaved = await newCharacter.save()
     res.status(201).json(characterSaved)
 }
-//Codigo 201 se trata de algo que se crea
-
 
 export const getCharacter = async (req, res) => {
     const characters = await Character.find()
@@ -26,7 +24,7 @@ export const getCharacter = async (req, res) => {
 
 export const getCharacterById = async (req, res) => {
    const characterId = await Character.findById(req.params.characterId)
-   res.status(200).json(CharacterId)
+   res.status(200).json(characterId)
 }
 
 export const updateCharacterById = async (req, res) => {

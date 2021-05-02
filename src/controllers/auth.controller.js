@@ -2,7 +2,6 @@ import User from '../models/user'
 import Role from '../models/rol'
 import jwt from 'jsonwebtoken'
 import config from '../config'
-import user from '../models/user'
 
 export const signUp = async (req, res) => {
     const {username, email, password, roles} = req.body

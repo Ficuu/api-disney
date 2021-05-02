@@ -4,13 +4,8 @@ const characterSchema = new Schema ({
     name: String,
     age: Number,
     weight: Number,
-    imgURL: String,
+    img: String,
     history: String
-}, {
-    film: [{
-        ref: 'Film',
-        type: Schema.Types.ObjectId
-    }]
 }, {
     timestamps: true,
     versionKey: false

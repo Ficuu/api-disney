@@ -7,6 +7,7 @@ import {createRoles} from './libs/initialSetup'
 import characterRoutes from './routes/character.routes'
 import authRoutes from './routes/auth.routes'
 import usersRoutes from './routes/user.routes'
+import filmRoutes from './routes/film.routes'
 
 const app = express()
 createRoles()
@@ -25,6 +26,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/characters', characterRoutes)
+app.use('/api/films', filmRoutes)
 app.use('/api/auth', authRoutes)
 app.use('/api/users', usersRoutes)
 
