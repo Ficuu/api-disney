@@ -16,7 +16,7 @@ Añadimos el .json que se encuentra en el directorio raiz a Postman
 
 ## Pre-requisitos 📋
 
-⚠️ Contar con MongoDB instalado de manera local.
+⚠️ Contar con MongoDB instalado de manera local y Nodemon de manera global.
 
 Para poder comenzar a utilizar la API: 
 
