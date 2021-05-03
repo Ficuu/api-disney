@@ -101,3 +101,44 @@ En Body -> Raw ingresamos, por ejemplo:
  
 Luego de que enviemos esa peticion, nos devolvera el objeto almacenado en la base de datos con el ID del film que esta almacenado en la collection 'films'. Caso contrario devuelve null.
 
+El servidor envia como respuesta los datos almacenados:
+
+```
+{
+    "film": [
+        "608f4175f507e72a385be557"
+    ],
+    "_id": "608f4187f507e72a385be558",
+    "name": "Elsa",
+    "age": 25,
+    "weight": 60,
+    "img": "https://anyimage.jpg",
+    "history": "sdas",
+    "createdAt": "2021-05-03T00:19:19.127Z",
+    "updatedAt": "2021-05-03T00:19:19.127Z"
+}
+```
+
+### Actualizar o eliminar personajes o peliculas
+
+Solo basta con ingresar en Headers de la misma manera las claves y valores al momento de crear un personaje o una pelicula
+
+En la ruta de Films -> PUT /films/:filmsId en la direccion URL le pasamos el Id de nuestro objeto
+
+![image](https://user-images.githubusercontent.com/49505462/116836830-6efa1e00-ab9e-11eb-826e-9f8c42a6f4c3.png)
+
+En Body -> Raw solo ingresamos los valores de nuestro objeto a modificar 
+
+```
+{
+    "title": "Frozen I"
+}
+```
+Solo con eso actualizamos el nombre de dicha pelicula
+
+Para eliminar realizamos las mismas acciones pero solo indicando en nuestra URL el id del objeto:
+
+![image](https://user-images.githubusercontent.com/49505462/116836894-bda7b800-ab9e-11eb-85ab-c5d713cdd88d.png)
+
+Nos devuelve un estado 204 despues de eliminar ese objeto.
+
