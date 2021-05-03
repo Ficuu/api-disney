@@ -52,7 +52,7 @@ kZekplunRwRgjwgDttPDsw_9GxE73uHuLPRJq4f2Q"
 ````
  
  
-Este token se envia como respuesta al momento de crear el usuario.
+El token se envia como respuesta al momento de crear el usuario o realizar una autenticación (login).
 
 Su función sera validar al momento de crear, actualizar o eliminar peliculas o personajes mientras ese usuario tenga el rol de "admin". Su plazo de vencimiento es de 24 horas.
  
