@@ -32,7 +32,7 @@ Una vez realizado los pasos anteriores, nos dirigimos a Postman
 
 ### Crear usuarios
 
-En la carpeta de ruta ya almacenada -> Characters -> POST /SignUp -> Body y en Raw copiamos esto:
+En la carpeta de ruta ya almacenada -> Auth -> POST /SignUp -> Body y en Raw copiamos esto:
 
 ```
 {
