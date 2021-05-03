@@ -11,7 +11,7 @@ Clonamos el repositorio e instalamos las librerias:
 npm i bcryptjs cors dotenv express helmet jsonwebtoken mongoose morgan @babel/cli @babel/core @babel/node @babel/preset-env
 ```
 
-Añadimos el .json que se encuentra en el directorio raiz a Postman
+Añadimos el .json que se encuentra en el directorio raiz a Postman.
 
 
 ## Pre-requisitos 📋
@@ -24,18 +24,11 @@ Para poder comenzar a utilizar la API:
 npm run dev
 ```
 
-Esto lo que hara es que comencemos a utilizar en modo de desarrollo
-
-y luego
-
-```
-npm run build
-```
-Si queremos traducir nuestro codigo a produccion
+Esto lo que hara es que comencemos a utilizar en modo de desarrollo.
 
 ## Ejecutando las pruebas ⚙️
 
-Luego de realizar esto, nos dirigimos a Postman
+Una vez realizado los pasos anteriores, nos dirigimos a Postman
 
 ### Crear usuarios
 
@@ -142,5 +135,12 @@ Para eliminar realizamos las mismas acciones pero solo indicando en nuestra URL 
 
 Nos devuelve un estado 204 despues de eliminar ese objeto.
 
+
+### Traducir codigo a produccion con Babel
+
+```
+npm run build
+```
+Si queremos traducir nuestro codigo a produccion. 
 
 Muchas gracias por utilizar la API ❤
