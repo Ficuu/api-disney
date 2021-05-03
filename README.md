@@ -42,7 +42,7 @@ En la carpeta de ruta ya almacenada -> Auth -> POST /SignUp -> Body y en Raw cop
   "roles": ["admin"]
 }
 ```
-Sino asignamos "roles", por defecto se creara el rol "user"
+Si no asignamos "roles", por defecto se creara el rol "user"
 
 
 ````
@@ -52,7 +52,9 @@ kZekplunRwRgjwgDttPDsw_9GxE73uHuLPRJq4f2Q"
 ````
  
  
-Este token funcionara al momento de crear, actualizar o eliminar peliculas o personajes mientras ese usuario tenga el rol de "admin". Su plazo de vencimiento es de 24 horas.
+Este token se envia como respuesta al momento de crear el usuario.
+
+Su función sera validar al momento de crear, actualizar o eliminar peliculas o personajes mientras ese usuario tenga el rol de "admin". Su plazo de vencimiento es de 24 horas.
  
 ## Crear peliculas o series
 
