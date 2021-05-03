@@ -141,6 +141,7 @@ Nos devuelve un estado 204 despues de eliminar ese objeto.
 ```
 npm run build
 ```
-Si queremos traducir nuestro codigo a produccion. 
 
-Muchas gracias por utilizar la API ❤
+
+
+Muchas gracias por utilizar la API ❤ Atte: Facu.
