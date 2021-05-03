@@ -142,3 +142,5 @@ Para eliminar realizamos las mismas acciones pero solo indicando en nuestra URL 
 
 Nos devuelve un estado 204 despues de eliminar ese objeto.
 
+
+Muchas gracias por utilizar la API ❤
