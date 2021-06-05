@@ -5,10 +5,10 @@ Proyecto de personajes de Disney aplicado en el desafio de Node Js de la platafo
 ### Instalación 🔧
 
 
-Clonamos el repositorio e instalamos las librerias:
+Instalamos las librerias:
 
 ```
-npm i bcryptjs cors dotenv express helmet jsonwebtoken mongoose morgan @babel/cli @babel/core @babel/node @babel/preset-env
+npm i 
 ```
 
 Añadimos el .json que se encuentra en el directorio raiz a Postman.
